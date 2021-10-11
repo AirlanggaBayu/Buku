@@ -22,6 +22,6 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //route CRUD
-Route::get('/buku', [App\Http\Controllers\BukuController::class, 'index'])->name('buku');
-Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
+// Route::get('/buku', [App\Http\Controllers\BukuController::class, 'index'])->name('buku');
+// Route::get('/about', [App\Http\Controllers\AboutController::class, 'index'])->name('about');
 Route::resource('/buku', App\Http\Controllers\BukuController::class);
